@@ -11,4 +11,5 @@ int main()
         sum = sum +i*i;
     }
     printf("tong la : %lld",sum);
+    return 0;
 }
