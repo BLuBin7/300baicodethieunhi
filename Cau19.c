@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<ctype.h>
-// Bài 19. Kiểm tra in hoa
+// Bài 19. Kiểm tra in hoa.
 /*Tất cả các ký tự chữ thường (a đến z) có các giá trị ASCII nằm trong khoảng từ  
 97 đến 122 , khoảng cách các chữ hoa với thường là 32 ,vd a(97) thì A(65)*/
 int main()

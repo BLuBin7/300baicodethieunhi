@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<ctype.h>
-//Bài 20. Kiểm tra chữ cái
+//Bài 20. Kiểm tra chữ cái.
 int main()
 {
     char var;

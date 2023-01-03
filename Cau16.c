@@ -1,5 +1,5 @@
 #include<stdio.h>
-// Bài 16. Kiểm tra năm nhuận
+// Bài 16. Kiểm tra năm nhuận.
 int main()
 {
     int nam;

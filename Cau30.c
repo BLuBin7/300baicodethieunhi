@@ -1,5 +1,5 @@
 #include<stdio.h>
-//Bài 30. Phép chia
+//Bài 30. Phép chia.
 int main()
 {
     int a,b,c;

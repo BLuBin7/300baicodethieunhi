@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include<math.h>
-//Bài 6. Tính khoảng cách
+//Bài 6. Tính khoảng cách.
 int main()
 {
     int i ,j ,g,k,add1,add2,sum =0;

@@ -1,5 +1,5 @@
 #include<stdio.h>
-// Bài 32. Số nhỏ thứ 2
+// Bài 32. Số nhỏ thứ 2.
 int main()
 {
     int a,b,c,d,e,min1,min2;

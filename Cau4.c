@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-// Bài 4. Tính tổng, hiệu, tích, thương
+// Bài 4. Tính tổng, hiệu, tích, thương.
 int main()
 {
     int a,b;

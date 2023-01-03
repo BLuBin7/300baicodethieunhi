@@ -1,5 +1,5 @@
 #include <stdio.h>
-// Bài 1. Phần nguyên, phần dư
+// Bài 1. Phần nguyên, phần dư.
 int main()
 {
     int i,n,j,m;

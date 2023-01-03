@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<math.h>
-//Bài 26. Kiểm tra tam giác
+//Bài 26. Kiểm tra tam giác.
 int main()
 {
     int a,b,c;

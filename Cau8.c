@@ -11,5 +11,5 @@ int main()
     {
         sum = sum+i;
     }
-    printf("gia tri tong la : %lld",sum);
+    printf("gia tri tong la : %lld ",sum);
 }

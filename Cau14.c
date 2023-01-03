@@ -1,5 +1,5 @@
 #include<stdio.h>
-//Bài 14. Số chia hết nhỏ nhất
+//Bài 14. Số chia hết nhỏ nhất.
 int main()
 {
     int a,b;

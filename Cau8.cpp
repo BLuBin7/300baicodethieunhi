@@ -8,7 +8,7 @@ int main(){
     // cach 2
     for(long long i = 0; i <= n; i++)
     {
-        s = s+i;
+        s = s+i ;
     }
     cout<< s;
     return 0;

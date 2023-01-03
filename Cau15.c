@@ -1,5 +1,5 @@
 #include<stdio.h>
-//Bài 15. Kiểm tra số chia hết cho 3 và 5
+//Bài 15. Kiểm tra số chia hết cho 3 và 5.
 int main()
 {
     int n;

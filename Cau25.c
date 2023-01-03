@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<math.h>
-// Bài 25. Tam giác hợp lệ
+// Bài 25. Tam giác hợp lệ.
 int main()
 {
     int a,b,c;

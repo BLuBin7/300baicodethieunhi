@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<math.h>
-// Bài 5. Tính chu vi, diện tích hình tròn
+// Bài 5. Tính chu vi, diện tích hình tròn.
 int main()
 {
     int r;

@@ -1,5 +1,5 @@
 #include <stdio.h>
-// Bài 10. Tính tổng 3
+// Bài 10. Tính tổng 3.
 int main(void)
 {
     int n;

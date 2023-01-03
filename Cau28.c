@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<math.h>
+// Bài 28. Phương trình bậc 2
 int main()
 {
     int a,b,c,y,x;

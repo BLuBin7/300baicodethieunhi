@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<math.h>
-//Bài 7. Chuyển đơn vị đo C và F
+//Bài 7. Chuyển đơn vị đo C và F.
 int main()
 {
     int C;

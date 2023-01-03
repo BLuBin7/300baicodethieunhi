@@ -1,5 +1,5 @@
 #include<stdio.h>
-// Bài 31. Kết quả học tập
+// Bài 31. Kết quả học tập.
 int main()
 {
     double a,b,c,d;

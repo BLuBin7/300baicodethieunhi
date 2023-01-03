@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-// Bài 2. Tính toán giá trị biểu thức
+// Bài 2. Tính toán giá trị biểu thức.
 int main()
 {
     int x=0,A=0;

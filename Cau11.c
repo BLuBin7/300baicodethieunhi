@@ -1,5 +1,5 @@
 #include<stdio.h>
-//Bài 11. Tính tổng 4
+//Bài 11. Tính tổng 4.
 int main (){
     int n;  long long sum = 0; 
     printf("nhap n : ");

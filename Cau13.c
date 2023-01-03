@@ -1,5 +1,5 @@
 #include <stdio.h>
-//Bài 13. Số chia hết lớn nhất
+//Bài 13. Số chia hết lớn nhất.
 int main()
 {
     int n,a,b;

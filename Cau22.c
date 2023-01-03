@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<ctype.h>
-//Bài 22. Chuyển ký tự hoa thành thường
+//Bài 22. Chuyển ký tự hoa thành thường.
 int main()
 {
     char a;

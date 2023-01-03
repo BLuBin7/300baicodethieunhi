@@ -1,5 +1,5 @@
 #include<stdio.h>
-//Bài 23. Chuyển kí tự thường thành kí tự hoa
+//Bài 23. Chuyển kí tự thường thành kí tự hoa.
 int main()
 {
     char a;

@@ -1,5 +1,5 @@
 #include<stdio.h>
-//Bài 24. Chữ cái kế tiếp
+//Bài 24. Chữ cái kế tiếp.
 int  main()
 {
     int a;

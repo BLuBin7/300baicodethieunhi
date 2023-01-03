@@ -1,5 +1,5 @@
 #include <stdio.h>
-// Bài 3. Tính toán giá trị biểu thức 2
+// Bài 3. Tính toán giá trị biểu thức 2.
 int main()
 {
     int a,b,c,S;

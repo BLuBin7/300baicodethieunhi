@@ -1,5 +1,5 @@
 #include<stdio.h>
-// Bài 29. Số thuộc đoạn
+// Bài 29. Số thuộc đoạn.
 int main()
 {
     float a,b;

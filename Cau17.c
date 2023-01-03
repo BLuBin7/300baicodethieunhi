@@ -1,5 +1,5 @@
 #include<stdio.h>
-// Bài 17. In ra số ngày của tháng
+// Bài 17. In ra số ngày của tháng.
 int main()
 {
     int t,n;
