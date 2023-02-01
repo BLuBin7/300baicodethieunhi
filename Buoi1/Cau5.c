@@ -3,7 +3,7 @@
 // Bài 5. Tính chu vi, diện tích hình tròn.
 int main()
 {
-    int r;
+    int r ;
     printf("nhap ban kinh r : ");
     scanf("%d",&r);
     printf("chu vi hinh tron la %.2f\n",(float)2*r*M_PI);
