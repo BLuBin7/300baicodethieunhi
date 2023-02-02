@@ -8,4 +8,4 @@ int main()
     printf("nhap N : ");
     scanf("%d",&N);
     if(M%2 != 0) 
-    {
+{
