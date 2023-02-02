@@ -1,8 +1,11 @@
 #include<stdio.h>
 #include<ctype.h>
 // Bài 18. Kiểm tra chữ in thường.
-/*Tất cả các ký tự chữ thường (a đến z) có các giá trị ASCII nằm trong khoảng từ  
-97 đến 122 , khoảng cách các chữ hoa với thường là 32 ,vd a(97) thì A(65)*/
+/*Tất cả các ký tự chữ thường (a đến z), có các giá trị ASCII nằm trong khoảng từ  
+97 đến 122 , 
+Tất cả các ký tự chữ hoa (Ađến Z), có các giá trị ASCII nằm trong khoảng từ  
+65 đến 90 , 
+khoảng cách các chữ hoa với thường là 32 ,vd a(97) thì A(65)*/
 int main()
 {
     char var;
