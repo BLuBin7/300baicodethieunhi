@@ -30,7 +30,7 @@ public class Main {
             arr[i] = sc.nextInt();
         }
 
-        System.out.println("Các phần tử của mảng sau khi sort: ");
+        System.out.println("Cac phan tu cua mang sau khi sap xep: ");
         BubbleSort(arr);
         print(arr);
 
