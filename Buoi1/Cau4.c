@@ -12,6 +12,6 @@ int main()
     printf("gia tri phep tru la : %d\n",a-b);
     printf("gia tri phep nhan la : %d\n",a*b);
     printf("gia tri phep chia la : %.2f\n",(float)a/b); // ep kieu float va lay sau dau "," 2 chu so
-    printf("%.10f",M_PI); // so pi pi pi pi pi pi pi pi pi 
+    printf("%.10f",M_PI); // so pi 
     return 0;
 }
