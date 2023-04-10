@@ -27,10 +27,10 @@ public class Main {
         }
 
         // QuickSort
-        System.out.println("Nhap gia tri pivot : ");
-        int pivot = input.nextInt();
+//        System.out.println("Nhap gia tri pivot : ");
+//        int pivot = input.nextInt();
         QuickSort quickSort = new QuickSort();
-        quickSort.quicksort(a,pivot,n);
+        quickSort.quickSort2(a,0,n-1);
         quickSort.print(a);
     }
 }
