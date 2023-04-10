@@ -19,7 +19,7 @@ public class Main {
         for(int i = 0; i < n;i++){
             System.out.print("a["+i+"] : ");
             a[i] = input.nextInt();
-        }
+        };
         // Output
         System.out.print("Unsorted Array :");
         for (int i = 0; i < n; i++) {
