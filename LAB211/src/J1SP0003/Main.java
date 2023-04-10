@@ -20,7 +20,7 @@ public class Main {
             System.out.print("a["+i+"] : ");
             a[i] = input.nextInt();
         }
-        //Output
+        // Output
         System.out.print("Unsorted Array :");
         for (int i = 0; i < n; i++) {
             System.out.print("\t"+a[i]);
