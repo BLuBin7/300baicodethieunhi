@@ -25,6 +25,10 @@ public class Main {
         for (int i = 0; i < n; i++) {
             System.out.print("\t"+a[i]);
         }
+        int[] tempMerge = new int[n];
+        MergeSort mergeSort = new MergeSort(a,tempMerge,n);
+        mergeSort.doMergeSort(0,n-1);
+        mergeSort.print(a);
 
 
     }
