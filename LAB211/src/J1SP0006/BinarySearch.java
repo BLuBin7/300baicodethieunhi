@@ -8,22 +8,50 @@ package J1SP0006;
 public class BinarySearch {
     private int value;
     private int[] a;
-    BinarySearch(int value,int[] a){
+    private int n;
+    BinarySearch(int value,int[] a, int n){
         this.value = value;
         this.a = a;
+        this.n = n;
     }
-    void binarySearch(int mid, int left, int right){
-        for (int i = 0; i < a.length; i++) {
-            left =  i;
-            right = a.length;
-            mid = i + (right-left)/2 ;
-            if(a[value]  > a[mid]){
-                binarySearch( mid, mid -1,right);
+
+
+
+
+    void BubbleSort(){
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i -1  ; j++) {
+                if(a[j] > a[j+1]){
+// không được tạo hàm swap như này nếu muốn swap 2 số liên tiếp trong 1 vòng for
+// thì cần phải ghi hàm trực tiếp trong lúc swap luôn, không nên ghi hàm swap trong Java
+                    // Java is Pass-by-Valua( truyền giá trị )
+                    int temp = a[j];
+                    a[j] = a[j+1];
+                    a[j+1] = temp;
+                }
+            }
+        }
+    }
+
+    void printBubbleSort(){
+        for (int i = 0; i < n; i++) {
+            System.out.println("\t"+a[i]);
+        }
+    }
+
+    int binarySearch(int mid, int left, int right){
+            if (left > right) {
+                return -1;
+            }
+            mid = (right-left)/2 ;
+            if (a[mid] == value) {
+                return mid;
+            }
+            else if(value  > a[mid]){
+                return binarySearch( mid, mid + 1,right);
             }
             else {
-                binarySearch( mid, left, mid +1);
+                return binarySearch( mid, left, mid -1);
             }
-
-        }
     }
 }
