@@ -1,12 +1,11 @@
 package J1SP0004;
 
+
 /**
  * Created by Binh
  * Date : 4/10/2023 - 8:06 PM
  * Description :
  */
-
-
 public class QuickSort {
 
 
@@ -30,6 +29,14 @@ public class QuickSort {
 //        System.out.println(" ");
 //    }
 
+    /**
+     * Partition int.
+     *
+     * @param a     the a
+     * @param left  the left
+     * @param right the right
+     * @return the int
+     */
     int partition(int[] a, int left, int right) {
         int i = left;
         int j = right;
@@ -53,7 +60,13 @@ public class QuickSort {
     }
 
 
-
+    /**
+     * Quick sort 2.
+     *
+     * @param arr   the arr
+     * @param left  the left
+     * @param right the right
+     */
     void quickSort2(int arr[], int left, int right) {
         int index = partition(arr, left, right);
         if (left < index - 1) {
@@ -65,7 +78,11 @@ public class QuickSort {
     }
 
 
-
+    /**
+     * Print.
+     *
+     * @param a the a
+     */
     void print(int[] a){
         for (int i = 0; i < a.length; i++) {
             System.out.println(a[i]);
