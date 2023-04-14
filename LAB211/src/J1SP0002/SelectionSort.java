@@ -8,11 +8,7 @@ package J1SP0002;
 
 
 public class SelectionSort {
-    void swap(int min , int i,int[]a){
-        int temp = a[min];
-        a[min] = a[i];
-        a[i] = temp;
-    }
+
 
     void SelectionSort(int[] a, int n ){
         // xet toi n-1 thoi
@@ -32,7 +28,9 @@ public class SelectionSort {
 //                a[min] = a[i];
 //                a[i] = temp;
                 // Option 2
-                 swap(i, min,a);
+                int temp = a[min];
+                a[min] = a[i];
+                a[i] = temp;
             }
             if(i==1) break;
         }

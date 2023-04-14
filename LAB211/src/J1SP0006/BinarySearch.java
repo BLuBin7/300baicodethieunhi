@@ -9,6 +9,14 @@ public class BinarySearch {
     private int value;
     private int[] a;
     private int n;
+
+    /**
+     * Instantiates a new Binary search.
+     *
+     * @param value the value
+     * @param a     the a
+     * @param n     the n
+     */
     BinarySearch(int value,int[] a, int n){
         this.value = value;
         this.a = a;
@@ -16,8 +24,9 @@ public class BinarySearch {
     }
 
 
-
-
+    /**
+     * Bubble sort.
+     */
     void BubbleSort(){
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i -1  ; j++) {
@@ -33,12 +42,23 @@ public class BinarySearch {
         }
     }
 
+    /**
+     * Print bubble sort.
+     */
     void printBubbleSort(){
         for (int i = 0; i < n; i++) {
             System.out.println("\t"+a[i]);
         }
     }
 
+    /**
+     * Binary search int.
+     *
+     * @param mid   the mid
+     * @param left  the left
+     * @param right the right
+     * @return the int
+     */
     int binarySearch(int mid, int left, int right){
             if (left > right) {
                 return -1;

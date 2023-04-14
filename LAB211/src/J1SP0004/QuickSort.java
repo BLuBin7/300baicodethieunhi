@@ -9,11 +9,6 @@ package J1SP0004;
 
 public class QuickSort {
 
-    void swap(int i, int j, int[] a) {
-        int temp = a[i];
-        a[i] = a[j];
-        a[j] = temp;
-    }
 
 //    void quickSort(int[] a ,int pivot,int n){
 //        int j=0;
@@ -47,7 +42,9 @@ public class QuickSort {
                 j--;
             }
             if (i <= j) {
-                swap(i, j, a);
+                int temp = a[i];
+                a[i] = a[j];
+                a[j] = temp;
                 i++;
                 j--;
             }

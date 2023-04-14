@@ -9,6 +9,11 @@ import java.util.Scanner;
  * Description :
  */
 public class Main {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter number of array(NOT SORTED): ");
