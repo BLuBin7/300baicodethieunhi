@@ -31,13 +31,13 @@ public class Main {
             System.out.print(a[i] + "\t");
         }
 
-        System.out.println("Nhap gia tri can tim :");
+        System.out.println("Enter the value to find :");
         int value = input.nextInt();
         BinarySearch binarySearch = new BinarySearch(value,a,n);
-        System.out.println("mang sau khi sap xep : ");
+        System.out.println("\n" +"Array after sorted : ");
         binarySearch.BubbleSort();
         binarySearch.printBubbleSort();
         int found =  binarySearch.binarySearch(value,0,a.length-1);
-        System.out.println("Gia tri can tim la : "+ value + "\n"+"tai vi tri : "+found);
+        System.out.println("Value to find is : "+ value + "\n"+" at index : " + found);
     }
 }
