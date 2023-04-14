@@ -7,6 +7,11 @@ package J1SP0003;
  */
 public class InsertionSort {
 
+    /**
+     * Insertion sort.
+     *
+     * @param a the a
+     */
     void InsertionSort(int[] a){
         for(int i = 0; i < a.length - 1; i++){
             for (int j = i+1; j < a.length; j++) {
@@ -22,7 +27,13 @@ public class InsertionSort {
         }
         System.out.println("");
     }
-        static void print(int[] a) {
+
+    /**
+     * Print.
+     *
+     * @param a the a
+     */
+    static void print(int[] a) {
             System.out.print("Sorted array: ");
             for (int i = 0; i < a.length; i++) {
                 System.out.print(a[i] + " ");
