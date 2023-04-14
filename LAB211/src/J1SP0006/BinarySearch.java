@@ -52,7 +52,7 @@ public class BinarySearch {
     }
 
     /**
-     * Binary search int.
+     * Binary search
      *
      * @param mid   the mid
      * @param left  the left
