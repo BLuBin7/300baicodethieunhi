@@ -10,6 +10,12 @@ package J1SP0002;
 public class SelectionSort {
 
 
+    /**
+     * Selection sort.
+     *
+     * @param a the a
+     * @param n the n
+     */
     void SelectionSort(int[] a, int n ){
         // xet toi n-1 thoi
         // vd: 1 mang 8 phan tu, neu i < n , khi i = 7 thi j = 8( mà đk là j<n) se ko hop li
@@ -37,6 +43,11 @@ public class SelectionSort {
         System.out.println();
     }
 
+    /**
+     * Print.
+     *
+     * @param a the a
+     */
     static void print(int[] a) {
         System.out.print("Sorted array: ");
         for (int i = 0; i < a.length; i++) {
