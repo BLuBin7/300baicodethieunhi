@@ -34,6 +34,5 @@ public class Main {
         binarySearch.printBubbleSort();
         int found =  binarySearch.binarySearch(value,0,a.length-1);
         System.out.println("Gia tri can tim la : "+ value + "\n"+"tai vi tri : "+found);
-
     }
 }
