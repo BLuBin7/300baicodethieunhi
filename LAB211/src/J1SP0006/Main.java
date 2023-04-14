@@ -37,7 +37,7 @@ public class Main {
         System.out.println("\n" +"Array after sorted : ");
         binarySearch.BubbleSort();
         binarySearch.printBubbleSort();
-        int found =  binarySearch.binarySearch(value,0,a.length-1);
+        int found =  binarySearch.binarySearch(value,0,a.length- 1);
         System.out.println("Value to find is : "+ value + "\n"+" at index : " + found);
     }
 }
