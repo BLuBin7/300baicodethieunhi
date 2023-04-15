@@ -7,5 +7,4 @@ package J1SP0007;
  */
 public class Graph {
 
-
 }
