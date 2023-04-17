@@ -21,6 +21,7 @@ public class Graph {
             AdjacencyMatrix[j][i] = true;
         }
     }
+    
     public void removeEdge(int i, int j) {
         if (i >= 0 && i < Vertex && j > 0 && j < Vertex) {
             AdjacencyMatrix[i][j] = false;
@@ -35,7 +36,4 @@ public class Graph {
             return false;
         }
     }
-
-
-
 }

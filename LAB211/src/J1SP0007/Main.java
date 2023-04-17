@@ -10,19 +10,19 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter number of array(NOT SORTED): ");
-        int n = input.nextInt();
+        Graph graph = new Graph(6 );
+        graph.addEdge(1, 4);
+        graph.addEdge(2, 4);
+        graph.addEdge(2, 5);
+        graph.addEdge(3, 5);
+        graph.addEdge(4, 5);
+        System.out.println("Enter the start point: ");
+        int start = input.nextInt();
+        input.nextLine();
 
-        int[] a = new int[n];
-        // Input
-        for(int i = 0; i < n; i++){
-            System.out.print("a[" +i+"]: ");
-            a[i] = input.nextInt();
-        }
+        System.out.println("Enter the end point: ");
+        int end = input.nextInt();
 
-        // Output
-        for (int i = 0; i < n; i++) {
-            System.out.print(a[i] + "\t");
-        }
+        System.out.println((graph.isEdge(start, end) ? "" : " not ") + " an edge");
     }
 }
