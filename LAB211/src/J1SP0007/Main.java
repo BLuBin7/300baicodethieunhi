@@ -10,12 +10,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        Graph graph = new Graph(6 );
-        graph.addEdge(1, 4);
+        Graph graph = new Graph(4 );
         graph.addEdge(2, 4);
+        graph.addEdge(4, 4);
         graph.addEdge(2, 5);
-        graph.addEdge(3, 5);
-        graph.addEdge(4, 5);
         System.out.println("Enter the start point: ");
         int start = input.nextInt();
         input.nextLine();
