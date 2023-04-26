@@ -1,4 +1,4 @@
-package LibraryManager.Controller;
+package LibraryManager.Model;
 
 import java.sql.Date;
 
@@ -10,13 +10,13 @@ import java.sql.Date;
 public class Client {
     private int id;
     private int fullName;
-    private Date dateofBirth;
+    private Date birthday;
     private String address;
 
     public Client(int id, int fullName, Date dateofBirth, String address) {
         this.id = id;
         this.fullName = fullName;
-        this.dateofBirth = dateofBirth;
+        this.birthday = dateofBirth;
         this.address = address;
     }
     public Client(){}
@@ -37,12 +37,12 @@ public class Client {
         this.fullName = fullName;
     }
 
-    public Date getDateofBirth() {
-        return dateofBirth;
+    public Date getBirthday() {
+        return birthday;
     }
 
-    public void setDateofBirth(Date dateofBirth) {
-        this.dateofBirth = dateofBirth;
+    public void setBirthday(Date dateofBirth) {
+        this.birthday = dateofBirth;
     }
 
     public String getAddress() {

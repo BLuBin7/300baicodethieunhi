@@ -1,4 +1,4 @@
-package LibraryManager.Controller;
+package LibraryManager.Model;
 
 /**
  * Created by Binh

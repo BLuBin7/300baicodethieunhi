@@ -1,5 +1,7 @@
 package LibraryManager.DataBase;
 import J1LP0013.DataBase.JDBCUtil;
+import LibraryManager.Model.Book;
+import LibraryManager.dao.BookDAO;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -18,19 +20,7 @@ public class Test {
         //2. create statement object
         Statement st = conn.createStatement();
         //3. Query
-        var sql = "insert into TRUSO_PHONG values (4,'Binh Chanh')";
-        var deleteStatement = "DELETE FROM TRUSO_PHONG WHERE TruSo='Binh Chanh' ";
-        //4. add and delete database
-       int check = st.executeUpdate(sql);
-//        int check = st.executeUpdate(deleteStatement);
-
-        if(check>0){
-            System.out.println("Successfully");
-        }else{
-            System.out.println("Failed");
-        }
-
-        //5. close Connection
-        JDBCUtil.closeConnection(conn);
+        Book b1 = new Book("1","code clean",88000,2023);
+        BookDAO.getInstance().insert(b1);
     }
 }
