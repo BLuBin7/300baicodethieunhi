@@ -1,4 +1,6 @@
-package J1LP0013.DataBase;
+package LibraryManager.DataBase;
+import J1LP0013.DataBase.JDBCUtil;
+
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
