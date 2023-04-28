@@ -15,10 +15,16 @@ public class JDBCUtil {
     public static Connection getConnection(){
         Connection con = null;
         try {
-            //SQL
+//            SQL (bug)
+            // Option 1
 //            String connection =
-//                    "jdbc:sqlserver://LAPTOP-SH8ICRDB;Database= Csdl_Congty;IntegratedSecurity=true";
+//                    "jdbc:sqlserver://LAPTOP-SH8ICRDB;Database=Library;IntegratedSecurity=false";
 //            Connection conn = DriverManager.getConnection(connection);
+//            System.out.println("thanh cong");
+            //Option 2
+//            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+//            con = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;Database=Library;user=sa,password=");
+
             //MYSQL
             DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
             String url = "jdbc:mySQL://localhost:3306/library";
@@ -26,10 +32,15 @@ public class JDBCUtil {
             String password = "";
 //            Connection
             con = DriverManager.getConnection(url, username, password);
-        } catch (SQLException e) { //catch for mysql
+
+        }
+        catch (SQLException e) { //catch for mysql
             throw new RuntimeException(e);
         }
-//        catch (ClassNotFoundException e) {
+
+//        catch (ClassNotFoundException e) { //catch for sql
+//            throw new RuntimeException(e);
+//        } catch (SQLException e) { //catch for sql
 //            throw new RuntimeException(e);
 //        }
         return con;

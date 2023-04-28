@@ -28,22 +28,66 @@ public class BookDAO implements DAOinterface<Book> {
                     " INSERT into Book(id,nameBook, price, publishingYear) " +
                             " values ('"+book.getId()+"','"+book.getNameBook()+"',"+book.getPrice()+","+book.getPublishingYear()+")";
             // insert,delete, update call this function
+            // If not found Library.book , you should set  library default
             int ketqua = st.executeUpdate(sql);
+            if(ketqua > 0){
+                System.out.println("Successfull");
+            }
+            else {
+                System.out.println("Failed!");
+            }
+
             System.out.println("so dong da them : " +ketqua);
+
+            // Disconnection
+            JDBCUtil.closeConnection(con);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return 0;
+    }
+
+    @Override
+    public int update(Book book) {
+        Connection con = JDBCUtil.getConnection();
+        try {
+            Statement st = con.createStatement();
+
+            String sql =
+                    "UPDATE book "+
+                    "SET "+"nameBook = '" +book.getNameBook() +" ' "+
+                            "WHERE id = " + book.getId();
+            // insert,delete, update call this function
+            // If not found Library.book , you should set  library default
+            int ketqua = st.executeUpdate(sql);
+            System.out.println("so dong da them : " + ketqua);
+
+            JDBCUtil.closeConnection(con);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
 
         return 0;
     }
-
-    @Override
-    public int update(Book book) {
-        return 0;
-    }
-
     @Override
     public int delete(Book book) {
+        Connection con = JDBCUtil.getConnection();
+        try {
+            Statement st = con.createStatement();
+
+            String sql =
+                    " DELETE FROM book"+
+                            " WHERE id = " + book.getId();
+            // insert,delete, update call this function
+            // If not found Library.book , you should set  library default
+            int ketqua = st.executeUpdate(sql);
+            System.out.println("so dong da xoa : " + ketqua);
+
+            JDBCUtil.closeConnection(con);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
         return 0;
     }
 
