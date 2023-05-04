@@ -6,21 +6,13 @@ package J1LP0013.Controller;
  * Description :
  */
 public class CarController implements VehicleController {
-    private int id;
+    private static int id = 0;
     private String name;
     private String color;
     private double price;
     private String brand;
     private String type;
     private int yearofmanufacture;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
@@ -70,8 +62,8 @@ public class CarController implements VehicleController {
         this.yearofmanufacture = yearofmanufacture;
     }
 
-    public CarController(int id, String name, String color, double price, String brand, String type, int yearofmanufacture) {
-        this.id = id;
+    public CarController(String name, String color, double price, String brand, String type, int yearofmanufacture) {
+        id++;
         this.name = name;
         this.color = color;
         this.price = price;

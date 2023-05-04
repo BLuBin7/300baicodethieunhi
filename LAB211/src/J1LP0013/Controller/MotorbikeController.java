@@ -6,7 +6,7 @@ package J1LP0013.Controller;
  * Description :
  */
 public class MotorbikeController implements VehicleController{
-    private int id;
+    private static int id = 0;
     private String name;
     private String color;
     private double price;
@@ -14,14 +14,6 @@ public class MotorbikeController implements VehicleController{
     private double speed;
     private boolean license;
 
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
@@ -71,8 +63,8 @@ public class MotorbikeController implements VehicleController{
         this.license = license;
     }
 
-    public MotorbikeController(int id, String name, String color, double price, String brand, double speed, boolean license) {
-        this.id = id;
+    public MotorbikeController(String name, String color, double price, String brand, double speed, boolean license) {
+        id++;
         this.name = name;
         this.color = color;
         this.price = price;
