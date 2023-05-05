@@ -4,17 +4,18 @@ import J1LP0013.Controller.VehicleController;
 
 /**
  * Created by Binh
- * Date : 4/23/2023 - 9:52 PM
+ * Date : 4/23/2023 - 9:53 PM
  * Description :
  */
-public class Car implements VehicleController {
+public class Motorbike implements VehicleController {
     private static int id = 0;
     private String name;
     private String color;
     private double price;
     private String brand;
-    private String type;
-    private int yearofmanufacture;
+    private double speed;
+    private boolean license;
+
 
     public String getName() {
         return name;
@@ -48,29 +49,29 @@ public class Car implements VehicleController {
         this.brand = brand;
     }
 
-    public String getType() {
-        return type;
+    public double getSpeed() {
+        return speed;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setSpeed(double speed) {
+        this.speed = speed;
     }
 
-    public int getYearofmanufacture() {
-        return yearofmanufacture;
+    public boolean isLicense() {
+        return license;
     }
 
-    public void setYearofmanufacture(int yearofmanufacture) {
-        this.yearofmanufacture = yearofmanufacture;
+    public void setLicense(boolean license) {
+        this.license = license;
     }
 
-    public Car(String name, String color, double price, String brand, String type, int yearofmanufacture) {
+    public Motorbike(String name, String color, double price, String brand, double speed, boolean license) {
         id++;
         this.name = name;
         this.color = color;
         this.price = price;
         this.brand = brand;
-        this.type = type;
-        this.yearofmanufacture = yearofmanufacture;
+        this.speed = speed;
+        this.license = license;
     }
 }

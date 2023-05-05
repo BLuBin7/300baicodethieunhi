@@ -21,6 +21,7 @@ public class Test {
 
         //2. create statement object
         Statement st = conn.createStatement();
+
         //3. Query
         Book b1 = new Book("1","code clean",88000,2023);
         BookDAO.getInstance().insert(b1);

@@ -1,5 +1,6 @@
 package J1LP0013;
 
+import J1LP0013.Dao.CarDAO;
 import J1LP0013.Exception.NotFoundName;
 
 import java.util.Scanner;
@@ -12,19 +13,19 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Nhap lua chon : ");
-        int choice = input.nextInt();
+        int choice = 0;
         do{
-            System.out.print("1. Load data from file");
-            System.out.print("2.  Add new vehicle ");
-            System.out.print("3. Update vehicle");
-            System.out.print("4. Delete vehicle ");
-            System.out.print("5. Search vehicle");
-            System.out.print("6. Show vehicle list");
-            System.out.print("7. Store data to file");
-
+            System.out.println("1. Load data from file");
+            System.out.println("2. Add new vehicle ");
+            System.out.println("3. Update vehicle");
+            System.out.println("4. Delete vehicle ");
+            System.out.println("5. Search vehicle");
+            System.out.println("6. Show vehicle list");
+            System.out.println("7. Store data to file");
+            System.out.println("Nhap lua chon : ");
+            choice = input.nextInt();
             if (choice == 1) {
-
+                CarDAO.getInstance().loadData();
             }
 
             if (choice == 2) {

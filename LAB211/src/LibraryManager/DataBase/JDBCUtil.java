@@ -52,6 +52,7 @@ public class JDBCUtil {
             // Get Name Csdl
             System.out.println(metaData.getDatabaseProductName());
             System.out.println(metaData.getURL());
+
         }
     }
 }
