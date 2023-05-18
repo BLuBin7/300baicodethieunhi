@@ -2,6 +2,7 @@ package J1LP0013;
 
 import J1LP0013.Dao.CarDAO;
 import J1LP0013.Exception.NotFoundName;
+import J1LP0013.Model.Car;
 
 import java.util.Scanner;
 
@@ -24,20 +25,40 @@ public class Main {
             System.out.println("7. Store data to file");
             System.out.println("Nhap lua chon : ");
             choice = input.nextInt();
+            input.nextLine();
             if (choice == 1) {
                 CarDAO.getInstance().loadData();
             }
 
             if (choice == 2) {
+                System.out.print("Name:");
+                String name = input.nextLine();
+                System.out.print("Color:");
+                String color = input.nextLine();
+                System.out.print("Price:");
+                double price = input.nextDouble();
+                input.nextLine();
+                System.out.print("Brand:");
+                String brand = input.nextLine();
+                System.out.print("Type:");
+                String type = input.nextLine();
+                System.out.print("Year:");
+                int year = input.nextInt();
 
+                Car car = new Car(name,color,price,brand,type,year);
+                CarDAO.getInstance().addNewvehicle(car);
             }
 
             if (choice == 3) {
-
+                System.out.print("nhap id :");
+                int id = input.nextInt();
+                CarDAO.getInstance().updateVehicle(id);
             }
 
             if (choice == 4) {
-
+                System.out.print("nhap id muon xoa");
+                int id = input.nextInt();
+                CarDAO.getInstance().deleteVehicle(id);
             }
 
             if(choice == 5){
@@ -47,10 +68,15 @@ public class Main {
                 int i = input.nextInt();
                 try {
                     if (i == 1) {
-
+                        System.out.print("nhap ten :");
+                        String name = input.nextLine();
+                        input.nextLine();
+                        CarDAO.getInstance().searchVehiclebyName(name);
                     }
                     if (i == 2) {
-
+                        System.out.print("nhap id :");
+                        int id = input.nextInt();
+                        CarDAO.getInstance().searchVehiclebyID(id);
                     }
                 }catch (Exception e) {
 

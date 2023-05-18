@@ -15,6 +15,9 @@ public class Car implements VehicleController {
     private String brand;
     private String type;
     private int yearofmanufacture;
+    public static int increaseid(){
+        return id++;
+    }
 
     public String getName() {
         return name;
@@ -64,8 +67,9 @@ public class Car implements VehicleController {
         this.yearofmanufacture = yearofmanufacture;
     }
 
+    public Car(){}
     public Car(String name, String color, double price, String brand, String type, int yearofmanufacture) {
-        id++;
+        increaseid();
         this.name = name;
         this.color = color;
         this.price = price;

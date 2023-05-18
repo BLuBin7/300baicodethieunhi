@@ -8,9 +8,11 @@ package J1LP0013.Dao;
 public interface DAOinterface <T>{
     public void loadData();
     public void addNewvehicle(T t);
-    public void updateVehicle(T t);
-    public void deleteVehicle(T t);
-    public void searchVehicle(T t);
+    public void updateVehicle(int id);
+    public void deleteVehicle(int id);
+    public void searchVehiclebyID(int id);
+    public void searchVehiclebyName(String name);
+
     public void showVehiclelist(T t);
     public void storeData(T t);
 }
