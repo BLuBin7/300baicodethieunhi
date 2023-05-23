@@ -1,4 +1,4 @@
-package J1LP0021;
+package J1LP0021.Student;
 
 import J1LP0021.Course.Course;
 

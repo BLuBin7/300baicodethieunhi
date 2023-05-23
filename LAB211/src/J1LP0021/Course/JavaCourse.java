@@ -1,6 +1,6 @@
 package J1LP0021.Course;
 
-import J1LP0021.Student;
+import J1LP0021.Student.Student;
 
 /**
  * Created by Binh
