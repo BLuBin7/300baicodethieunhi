@@ -5,6 +5,13 @@
       "type": "java",
       "name": "Solution",
       "request": "launch",
+      "mainClass": "Leetcode.String.ParenthesisProblem.MaximumNestingDepth.Solution",
+      "projectName": "300baicodethieunhi_f50c3de2"
+    },
+    {
+      "type": "java",
+      "name": "Solution",
+      "request": "launch",
       "mainClass": "Solution",
       "projectName": "300baicodethieunhi_f50c3de2"
     },
