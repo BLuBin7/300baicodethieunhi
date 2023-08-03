@@ -25,29 +25,27 @@ public class Bai140 {
 
     public float find(float[] arr) {
         int count = 0;
-        float min = 0;
+        float min = findDuong(arr);
         for (int i = 0; i < arr.length; i++) {
             if (check(arr[i]) == true) {
                 count++;
-                if (count == 1) {
+                if (min > arr[i]) {
                     min = arr[i];
-                }
-                else if(min > arr[i]) {
-                    min = arr[i];
-                    else if(i == arr.length -1) {
-
+                    if (i == arr.length - 1) {
                         return min;
-                }
-                }
-                
+                    }
+                } 
             }
+        }
+        if(count >= 1){
+            return min;
         }
         return -1;
     }
 
     public static void main(String[] args) {
         Bai140 a = new Bai140();
-        float[] b = { -1.5f, -2.7f, 3.3f, 2.9f, 1.3f };
+        float[] b = { 1.5f, 2.7f, -3.3f, 2.9f, 1.3f };
         System.out.println(a.find(b));
     }
 }
