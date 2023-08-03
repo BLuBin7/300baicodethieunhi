@@ -10,6 +10,6 @@ public class Bai156 {
         return min;
     }
     public static void main(String[] args) {
-        
+        System.out.println(new Bai156().find(new float[]{1, 2, 3, 4, 5}, 3));
     }
 }
