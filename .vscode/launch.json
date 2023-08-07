@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Solution",
+      "request": "launch",
+      "mainClass": "Leetcode.String.checkTypesofString.ValidAnagram.Solution",
+      "projectName": "300baicodethieunhi_f50c3de2"
+    },
+    {
+      "type": "java",
       "name": "Bai135",
       "request": "launch",
       "mainClass": "Buoi2.Bai135",
