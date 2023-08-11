@@ -13,7 +13,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Builder
 public class FresherCandidate extends Candidate {
     private String graduationDate;
     private String graduationRank;
