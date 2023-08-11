@@ -13,14 +13,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Builder
 public class Candidate {
-    private String id;
+    private String Id;
     private String FirstName;
     private String LastName;
     private String Birthday;
     private String Address;
     private String Phone;
     private String Email;
-    private CandidateType candidateType;
+    private int candidateType;
 }
