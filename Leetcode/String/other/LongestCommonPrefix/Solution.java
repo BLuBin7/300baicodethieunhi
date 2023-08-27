@@ -25,7 +25,6 @@ public class Solution {
         Solution solution = new Solution();
         System.out.println(solution.longestCommonPrefix(new String[] { "flower", "flow", "flight" }));
         System.out.println(solution.longestCommonPrefix(new String[] { "ab", "a" }));
-
     }
 }
 
