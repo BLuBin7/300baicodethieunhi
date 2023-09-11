@@ -36,7 +36,7 @@ public class Solution {
     // }
     // Solution 2
     public int missingNumber(int[] nums) {
-        int n = nums.length;
+      int n = nums.length;
       int sum = 0;
       while(n>0){
           sum +=n;
