@@ -5,6 +5,7 @@ public class Solution {
             return targetSum == root.val;
         }
         System.out.println(root.val);
+        System.out.println(targetSum - root.val);
         return hasPathSum(root.left, targetSum - root.val) || hasPathSum(root.right, targetSum - root.val);
     }
     public static void main(String[] args) {
@@ -18,6 +19,6 @@ public class Solution {
         root.left.left.left = new TreeNode(7);
         root.left.left.right = new TreeNode(2);
         root.right.right.right = new TreeNode(1);
-        System.out.println(solution.hasPathSum(root, 18));
+        System.out.println(solution.hasPathSum(root, 27));
     }
 }
