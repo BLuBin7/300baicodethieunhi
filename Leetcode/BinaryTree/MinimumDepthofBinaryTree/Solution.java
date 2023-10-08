@@ -1,6 +1,6 @@
 public class Solution {
     public int minDepth(TreeNode root) {
-        if(root ==null){
+        if(root == null){
             return 0;
         }
         int lc = minDepth(root.left);
