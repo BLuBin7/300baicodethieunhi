@@ -5,63 +5,7 @@
       "type": "java",
       "name": "Solution",
       "request": "launch",
-      "mainClass": "Leetcode.String.other.NumberofSegmentsinaString.Solution",
-      "projectName": "300baicodethieunhi_f50c3de2"
-    },
-    {
-      "type": "java",
-      "name": "Solution",
-      "request": "launch",
-      "mainClass": "Leetcode.String.checkTypesofString.WordEqualsSummationofTwoWords.Solution",
-      "projectName": "300baicodethieunhi_f50c3de2"
-    },
-    {
-      "type": "java",
-      "name": "Cau707",
-      "request": "launch",
-      "mainClass": "Cau707",
-      "projectName": "300baicodethieunhi_f50c3de2"
-    },
-    {
-      "type": "java",
-      "name": "Solution",
-      "request": "launch",
-      "mainClass": "Leetcode.String.checkTypesofString.ValidAnagram.Solution",
-      "projectName": "300baicodethieunhi_f50c3de2"
-    },
-    {
-      "type": "java",
-      "name": "Bai135",
-      "request": "launch",
-      "mainClass": "Buoi2.Bai135",
-      "projectName": "300baicodethieunhi_f50c3de2"
-    },
-    {
-      "type": "java",
-      "name": "Solution",
-      "request": "launch",
-      "mainClass": "Leetcode.String.ParenthesisProblem.MaximumNestingDepth.Solution",
-      "projectName": "300baicodethieunhi_f50c3de2"
-    },
-    {
-      "type": "java",
-      "name": "Solution",
-      "request": "launch",
       "mainClass": "Solution",
-      "projectName": "300baicodethieunhi_f50c3de2"
-    },
-    {
-      "type": "java",
-      "name": "Cau6",
-      "request": "launch",
-      "mainClass": "Cau6",
-      "projectName": "300baicodethieunhi_f50c3de2"
-    },
-    {
-      "type": "java",
-      "name": "GenerateParentheses",
-      "request": "launch",
-      "mainClass": "GenerateParentheses",
       "projectName": "300baicodethieunhi_f50c3de2"
     },
     {
