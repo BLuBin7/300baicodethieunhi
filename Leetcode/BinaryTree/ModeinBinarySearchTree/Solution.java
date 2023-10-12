@@ -34,7 +34,6 @@ public class Solution{
         }
         map.put(root.val, map.getOrDefault(root.val, 0)+1);
        
-        
         helper(root.right, map);
         helper(root.left, map);
     }
