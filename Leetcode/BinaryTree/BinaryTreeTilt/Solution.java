@@ -3,7 +3,7 @@ public class Solution {
         if(root==null) return 0;
         else return root.val + sum(root.left)+sum(root.right);
     }
-
+    
     static int helper(TreeNode root){
         if(root==null) return 0;
 
