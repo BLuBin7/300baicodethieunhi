@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/ConvertBinaryNumber" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/IntersectionofTwoLinkedLists" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LinkedListCycle" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Merge oSortedLists" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MiddleoftheLinkedList" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PalindromeLinkedList" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RemoveDuplicatesfromSortedList" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RemoveLinkedListElements" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ReverseLinkedList" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

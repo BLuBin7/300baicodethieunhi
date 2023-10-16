@@ -6,7 +6,7 @@
       "name": "Solution",
       "request": "launch",
       "mainClass": "Solution",
-      "projectName": "300baicodethieunhi_f50c3de2"
+      "projectName": "300baicodethieunhi_6b90e6b4"
     },
     {
       "args": [
@@ -27,6 +27,25 @@
       "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
       "args": [],
       "cwd": "C:\\msys64\\mingw64\\bin"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/builu/Documents/300baicodethieunhi/Buoi2",
+      "program": "c:/Users/builu/Documents/300baicodethieunhi/Buoi2/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
     }
   ]
 }

@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.StringTokenizer;
 
 public class Solution {
     public int countSegments(String s) {

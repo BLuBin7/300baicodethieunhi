@@ -1,5 +1,3 @@
-import java.util.Stack;
-
 public class Solution {
     public int getDecimalValue(ListNode head) {
         ListNode node = head;

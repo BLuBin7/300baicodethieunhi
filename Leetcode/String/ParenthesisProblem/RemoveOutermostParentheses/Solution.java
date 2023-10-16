@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Solution {
     public String removeOuterParentheses(String s) {
         int countopen = 0, countclose = 0;

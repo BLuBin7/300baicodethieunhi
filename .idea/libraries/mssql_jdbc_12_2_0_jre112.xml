@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mssql-jdbc-12.2.0.jre112">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/LAB211/src/LibraryManager/lib/sql/mssql-jdbc-12.2.0.jre11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

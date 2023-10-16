@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/ArrangingCoins" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CountCompleteTreeNodes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FindSmallestGreaterThanTarget" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FirstBadVersion" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GuessNumberHigherorLower" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/IntersectionofTwoArrays" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MissingNumber" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pascal'sTriangle" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SearchInsertPosition" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sqrt(x)" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ValidPerfectSquare" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

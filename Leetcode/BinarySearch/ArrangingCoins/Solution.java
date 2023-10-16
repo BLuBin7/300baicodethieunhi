@@ -1,3 +1,4 @@
+
 public class Solution {
     public int arrangeCoins(int n) {
         long i=0;
