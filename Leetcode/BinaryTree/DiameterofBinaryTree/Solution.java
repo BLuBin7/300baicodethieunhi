@@ -1,28 +1,35 @@
 public class Solution {
     int HeightLeft = 0;
     int HeightRight = 0;
-    int answer = 0;
-    public int dfs(TreeNode root) {
+    int answer[] ;
+    public int diameterOfBinaryTree(TreeNode root) {
+
+        // Create an array to hold the diameter of the tree
+        int diameter[] = new int[1];
+
+        // Recursively calculate the height of the tree and update the diameter array
+        height(root,diameter);
+
+        // Return the diameter of the tree
+      return diameter[0];
+    }
+
+    public int height(TreeNode root, int diameter[]){
+        
+        // Base case: if the root is null, the height is 0
         if(root == null){
-            return -1;
-        }
-        if(root.left == null && root.right == null){
             return 0;
         }
-        HeightLeft = dfs(root.left);
-        HeightRight = dfs(root.right);
-        answer = Math.max(answer, HeightLeft + HeightRight + 2);
 
-        return Math.max(HeightLeft, HeightRight) + 1;
-    }
+        // Recursively calculate the height of the left and right subtrees
+        int left = height(root.left,diameter);
+        int right = height(root.right,diameter);
 
-    public int diameterOfBinaryTree(TreeNode root) {
-        dfs(root);
-        return answer;
-    }
+        // Update the diameter array by taking the maximum diameter that passes through the current node
+        diameter[0] = Math.max(diameter[0],left + right);
 
-    public static void main(String[] args) {
-        Solution solution = new Solution();
+        // Return the maximum depth of the current node by adding 1 to the maximum depth of its deepest subtree
+        return Math.max(left,right)+1;
     }
     
 }
