@@ -1,0 +1,205 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace MainData
+{
+    public enum CustomerType { TrungThanh, TiemNang, CanQuanTam, KhachHangKhac };
+
+    class Customer
+    {
+        private string customerID = "C000";
+        private string customerName = "A";
+        private string customerAddress = "TPHCM";
+        private string customerPhone = "0123456789";
+        private CustomerType customerType = CustomerType.TrungThanh;
+
+        public string ValCustomerID
+        {
+            get { return customerID; }
+            set { customerID = value; }
+        }
+
+        public string ValCustomerName
+        {
+            get { return customerName; }
+            set { customerName = value; }
+        }
+
+        public string ValCustomerAddress
+        {
+            get { return customerAddress; }
+            set { customerAddress = value; }
+        }
+
+        public string ValCustomerPhone
+        {
+            get { return customerPhone; }
+            set { customerPhone = value; }
+        }
+
+        public CustomerType ValCustomerType
+        {
+            get { return customerType; }
+            set { customerType = value; }
+        }
+
+        public Customer() { }
+
+        public Customer(string CustomerID, string CustomerName, string CustomerAddress, string CustomerPhone, CustomerType customerType)
+        {
+            this.customerID = CustomerID;
+            this.customerName = CustomerName;
+            this.customerAddress = CustomerAddress;
+            this.customerPhone = CustomerPhone;
+            this.customerType = customerType;
+        }
+
+        public void CustomerInfo()
+        {
+            string customerTypeName = Enum.GetName(typeof(CustomerType), customerType);
+
+            if (customerID != "C000")
+            {
+                Console.WriteLine("Nhan vien: {0} \n Ten: {1} \n Dia chi: {2} \n Sdt: {3} \n Loai: {4}",
+                    ValCustomerID, ValCustomerName, ValCustomerAddress, ValCustomerPhone, ValCustomerType);
+            }
+        }
+    }
+
+    class Company
+    {
+        public List<Customer> Customers { get; set; }
+        Dictionary<CustomerType, string> customersInfo = new Dictionary<CustomerType, string>();
+        public string Name;
+        int numberofCompany = 0;
+
+        public Company()
+        {
+            Customers = new List<Customer>();
+            Name = "Not Assigned";
+            customersInfo.Add(CustomerType.CanQuanTam, "Nhan vien can quan tam");
+            customersInfo.Add(CustomerType.KhachHangKhac, "Nhan vien la khach hang khac");
+            customersInfo.Add(CustomerType.TiemNang, "Nhan vien tiem nang");
+            customersInfo.Add(CustomerType.TrungThanh, "Nhan vien trung thanh");
+        }
+
+        public string ValName
+        {
+            get { return Name; }
+            set { Name = value; }
+        }
+
+        public int ValNumberofCompany
+        {
+            get { return numberofCompany; }
+            set { numberofCompany = value; }
+        }
+
+        public void CompanyInfo()
+        {
+            Console.WriteLine("Cong ty {0} co {1} nhan vien ", Name, numberofCompany);
+            foreach (Customer cs in Customers)
+            {
+                KeyValuePair<CustomerType, string> info = customersInfo.FirstOrDefault(o => o.Key == cs.ValCustomerType);
+                cs.CustomerInfo();
+                Console.WriteLine("Thong tin nhan vien: {0} \n", info.Value);
+            }
+        }
+
+        public Customer SearchCustomer<T>(T search)
+        {
+            Customer c = new Customer();
+            if (typeof(T) == typeof(string))
+            {
+                c = Customers.FirstOrDefault(o => o.ValCustomerID == search.ToString());
+                if (c != null)
+                {
+                    return c;
+                }
+            }
+            else if (typeof(T) == typeof(int))
+            {
+                if (Convert.ToInt32(search) < Customers.Count)
+                {
+                    return Customers[Convert.ToInt32(search)];
+                }
+            }
+            Console.WriteLine("Customer is not found");
+            return new Customer();
+        }
+
+        public delegate void CompanyHandler(Company company);
+        public event CompanyHandler CompanyAddorRemoveEvent;
+
+        public void OnCompanyChanger(Company company)
+        {
+            if (CompanyAddorRemoveEvent != null)
+            {
+                CompanyAddorRemoveEvent(this);
+            }
+        }
+
+        public void AddCustomer(Customer customer)
+        {
+            Customers.Add(customer);
+            OnCompanyChanger(this);
+        }
+
+        public void RemoveCustomer(Customer customer)
+        {
+            Customers.Remove(customer);
+            OnCompanyChanger(this);
+        }
+    }
+
+    public static class MyExtensions
+    {
+        public static string ConvertToString(this Customer customer)
+        {
+            string customerType = Enum.GetName(typeof(CustomerType), customer.ValCustomerType);
+
+            if (customer.ValCustomerID != "C000")
+            {
+                return String.Format("Nhan vien: {0} \n Ten: {1} \n Dia chi: {2} \n Sdt: {3} \n Loai: {4}",
+                    customer.ValCustomerID, customer.ValCustomerName, customer.ValCustomerAddress, customer.ValCustomerPhone, customer.ValCustomerType);
+            }
+            else
+            {
+                return " ";
+            }
+        }
+    }
+}
+
+namespace CompanyManagement
+{
+    class Program
+    {
+        static void UpdateCustomerofCompany(Company company)
+        {
+            company.ValNumberofCompany = company.Customers.Count;
+        }
+
+        static void Main(string[] args)
+        {
+            Company company = new Company();
+            company.Name = "A";
+
+            company.CompanyAddorRemoveEvent += new Company.CompanyHandler(UpdateCustomerofCompany);
+            company.Customers.Add(new Customer("A001", "A002", "A003 ", "0000", CustomerType.TrungThanh));
+            company.CompanyInfo();
+
+            Console.WriteLine("Searching for customers...");
+            Customer customer = company.SearchCustomer("A001");
+            customer.CustomerInfo();
+            company.SearchCustomer(1).CustomerInfo();
+
+            Console.WriteLine(company.SearchCustomer("A001").ConvertToString());
+
+            company.RemoveCustomer(customer);
+
+            Console.ReadKey();
+        }
+    }
+}
