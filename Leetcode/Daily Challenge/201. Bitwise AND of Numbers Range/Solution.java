@@ -7,7 +7,7 @@ class Solution {
             right >>= 1;
             suffixLen++;
         }
-
+        
         return left << suffixLen;
     }
 }
