@@ -1,3 +1,27 @@
+// // #Two Pointers
+// class Solution {
+//     public int findMaxK(int[] nums) {
+//         Arrays.sort(nums);
+//         int left = 0;
+//         int right = nums.length - 1;
+
+//         while (left < right) {
+//             int sum = nums[left] + nums[right];
+//             if (sum == 0) {
+//                 return nums[right];
+//             }
+//             if (sum < 0) {
+//                 left++;
+//             }
+//             else if (sum > 0) {
+//                 right--;
+//             }
+//         }
+//         return -1;
+//     }
+// }
+
+// #Hashset
 // class Solution {
 //     public int findMaxK(int[] nums) {
 //         int max = nums[0];
@@ -26,8 +50,7 @@
 //     }
 // }
 
-/// Optimize
-
+/// Optimize Hashset
 public class Solution {
     public int findMaxK(int[] nums) {
         int max = Integer.MIN_VALUE;
